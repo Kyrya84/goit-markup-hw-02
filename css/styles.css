@@ -8,10 +8,11 @@
     --secondary-background-color: #F5F4FA;
 }
 
-body{css/styles.css
+body{
     background-color: var(--primary-background-color);
     color: : var(--primary-text-color);
     font-family: 'Roboto', sans-serif;
+    font-size: 14px;
     letter-spacing: 0.03em
 }
 
@@ -43,32 +44,32 @@ ul {
     color: var(--primary-text-color);
 
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
 .link:hover,
 .link:focus {
     color: var(--accent-color);
 }
 
-.nav-menu .link.current {
+.current {
     color: var(--accent-color);
 }
 
 /* contacts information */
 
-.contacts-item{
+.contacts{
     color: var(--secondary-text-color);
 
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
-.contacts-item:hover,
-.contacts-item:focus {
+.contacts:hover,
+.contacts:focus {
 color:var(--accent-color)
 }
 
@@ -110,7 +111,6 @@ color:var(--accent-color)
     color: var(--primary-text-color);
 
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 }
@@ -118,17 +118,13 @@ color:var(--accent-color)
 .skills-text{
     color: var(--secondary-text-color);
 
-    font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
 }
 
 /* section styles */
 
-.work-title{
-    color: var(--primary-text-color);
-
-    font-weight: 700;
+.sectin-title{
+   
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
@@ -141,8 +137,7 @@ color:var(--accent-color)
 }
 
 .item-title{
-    color: var(--primary-text-color);
-
+    
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -152,7 +147,6 @@ color:var(--accent-color)
 .item-text{
     color: var(--secondary-text-color);
 
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -180,21 +174,24 @@ color:var(--accent-color)
     color: var(--accent-color);
 }
 
+.address-link,
+.maincontacts-link{
+    text-decoration: none;
+}
+
 .address-link{
     color: var(--text-white-color);
 
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
 }
 
-.maincontacts-link{
+.maincontacts{
     color:rgba(255, 255, 255, 0.6);
 
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
 }
 
@@ -204,6 +201,7 @@ color:var(--accent-color)
 
 button{
     font-family: inherit;
+    cursor: pointer;
 } 
 
 .button{
@@ -232,16 +230,17 @@ button{
 .projects-title{
     color: var(--primary-text-color);
 
-    font-weight: 700;
-    font-size: 18px;
+        font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
 .projects-text{
     color: var(--secondary-text-color);
 
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.89;
    
+}
+.active{
+    color: var(--accent-color);
 }
